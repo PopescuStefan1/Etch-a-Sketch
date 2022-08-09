@@ -37,7 +37,7 @@ button.addEventListener('click', buttonClick);
 
 function buttonClick() {
     let size = 0;
-    while (size < 1 || size > 99) {
+    while (size < 1 || size > 99 || isNaN(size)) {
         size = prompt("Choose the grid size (1-99)", "16");
     }
 
