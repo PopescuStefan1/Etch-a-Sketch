@@ -1,0 +1,51 @@
+html,
+body {
+    height: 100vh;
+}
+
+#container{
+    display: flex;
+    width: 720px;
+    flex-direction: column;
+    padding: 0;
+    margin: auto;
+    border: 0;
+    gap: 12px;
+}
+
+#grid-container {
+    background-color: lightgray;
+    height: 720px;
+    width: 720px;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 6.25%);
+    padding: 0;
+    border: 5px solid darkslategray;
+}
+
+#squares-button{
+    width: 90px;
+    height: 90px;
+    align-self: flex-start;
+    border-radius: 8px;
+    background-color: lightgray;
+    transition: all 0.12s;
+    border: 4px double lightcoral;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#squares-button:hover{
+    background-color: lightcoral;
+    color: white;
+}
+
+.square {
+    margin: 0;
+}
+
+.highlight{
+    background-color: lightcoral;
+}
